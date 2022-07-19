@@ -1,0 +1,94 @@
+class Node(object):
+    def __init__(self):
+        self.sub_path = dict()  # k v
+        self.count = 0
+
+    def is_valid(self):
+        return self.count > 0
+
+
+class Trie:
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.root = Node()
+
+    def insert(self, word):
+        """
+        Inserts a word into the trie.
+        :type word: str
+        :rtype: void
+        """
+        cur_node = self.root
+
+        for i in range(len(word)):
+            c = word[i]
+
+            if c in cur_node.sub_path:
+                cur_node = cur_node.sub_path[c]
+                if i == (len(word) - 1):
+                    cur_node.count += 1
+            else:
+                cur_node.sub_path[c] = Node()
+                cur_node = cur_node.sub_path[c]
+                if i == (len(word) - 1):
+                    cur_node.count += 1
+
+    def search(self, word):
+        """
+        Returns if the word is in the trie.
+        :type word: str
+        :rtype: bool
+        """
+
+        cur_node = self.root
+        for i in range(len(word)):
+            c = word[i]
+
+
+            print(i)
+            print(c)
+            print(cur_node.sub_path)
+
+
+            if c not in cur_node.sub_path:
+                return False
+            else:
+                cur_node = cur_node.sub_path.get(c)
+
+            if i == (len(word) - 1):
+                print('end')
+                return cur_node.is_valid()
+
+    def startsWith(self, prefix):
+        """
+        Returns if there is any word in the trie that starts with the given prefix.
+        :type prefix: str
+        :rtype: bool
+        """
+
+        cur_node = self.root
+        for i in range(len(prefix)):
+            c = prefix[i]
+
+            if c not in cur_node.sub_path:
+                return False
+            else:
+                cur_node = cur_node.sub_path.get(c)
+
+            if i == len(prefix) - 1:
+                return True
+
+if __name__ == '__main__':
+
+    #Your Trie object will be instantiated and called as such:
+    word = 'ab'*400
+    prefix = 'ab'
+    obj = Trie()
+    obj.insert(word)
+    param_2 = obj.search(word)
+    print(param_2)
+    param_3 = obj.startsWith(prefix)
+    print(param_3)
