@@ -1,5 +1,6 @@
 """
 单调栈
+todo 还要深入研究一下，并刷刷题
 """
 
 def mono_stack(inums, get_left_min=True):

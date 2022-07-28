@@ -1,3 +1,18 @@
+"""
+union find 问题
+    调用方式
+        uf = UF()                   新建uf类
+        uf.union(a,b)->None         将a、b连接
+        uf.connected(a,b)-> bool    a、b是否连同
+
+    实现类
+        UFInterface     -接口类
+        QuickFindUF     -find操作O（1），connected操作N
+        QuickUnionUF    -union操作（logN）
+        UF              -最优实现，直接使用
+"""
+
+
 class UFInterface:
     def __init__(self):
         pass
