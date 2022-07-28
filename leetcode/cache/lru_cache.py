@@ -12,7 +12,7 @@ class LRUCache:
     """
     设计思路
     用双向链表去存储具体数据的节点
-    get，put 用 基于hash的dict来达到O（1）的操作
+    get，put用基于hash的dict来达到O（1）的操作
     """
 
     def __init__(self, capacity: int):
