@@ -15,12 +15,16 @@ merging of (9 ⨉ 4^i) – (9 ⨉ 2^i) + 1
 and 4^i – (3 ⨉ 2^i) + 1
 """
 
+import random
+from sgd_alg.util import calc_time
 
+
+@calc_time
 def shell_sort(li):
     # 确定最大h，然后逐步递减。这里使用h=3h+1
     h = 1
     while True:
-        if (3*h+1) < len(li):
+        if (3 * h + 1) < len(li):
             h = 3 * h + 1
         else:
             break
@@ -35,11 +39,17 @@ def shell_sort(li):
                     j -= h
                 else:
                     break
-        h = h//3
+        h = h // 3
 
 
 if __name__ == '__main__':
-    a = [4, 76, 7, 8, 3, 72, 723, -325, 1]
+    # a = [4, 76, 7, 8, 3, 72, 723, -325, 1]
 
+    # 1e4 cost_time: 0.04799771308898926
+    # 1e5 cost_time: 0.7909963130950928
+    # 1e6 cost_time: 13.919885873794556s
+    # 还是比较慢的算法
+
+    a = [random.random() for _ in range(int(1e6))]
     shell_sort(a)
-    print(a)
+    # print(a)
