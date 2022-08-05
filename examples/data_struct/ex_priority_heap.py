@@ -4,20 +4,20 @@ import time
 from sgd_alg.data_struct.heap import PriorityHeap
 
 
+"""
+使用小根堆，keep max 4。还是可以实现数据流的大筛选
+需要手动控制一下pop head的时机
+todo 整合成完整可调用的库
+"""
 def ex_priority_heap():
-    heap = PriorityHeap()
-    for i in [9, 5, 4, 3, 2, -9]:
+    heap = PriorityHeap(capacity=4, reverse=True)
+    for i in [1, 2, 3, 4, 5, -1, -2]:
+        if heap.is_full():
+            if heap.get_head() < i:
+                heap.pop_head()
         heap.insert(i)
-
-    heap.log()
-    heap.pop_head()
-    heap.log()
-    heap.pop_head()
-    heap.log()
-
-    for i in range(7):
-        heap.pop_head()
         heap.log()
+    heap.log()
 
 
 def ex_press_test():
@@ -38,5 +38,5 @@ def ex_press_test():
 
 
 if __name__ == '__main__':
-    # ex_priority_heap()
-    ex_press_test()
+    ex_priority_heap()
+    # ex_press_test()

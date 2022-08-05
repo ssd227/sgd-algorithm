@@ -48,7 +48,7 @@ def smaller_compare(a, b):
 
 class PriorityHeap:
     def __init__(self, capacity=100, reverse=False):
-        self.tree = [0] * capacity
+        self.tree = [0] * (capacity+1)
         self.capacity = capacity
         self.size = 0
 
@@ -58,9 +58,8 @@ class PriorityHeap:
 
     def insert(self, x):
         if self.size >= self.capacity:
-            print("exceed max capacity")
+            print("exceed max capacity, insert fail!!!")
             return
-
         self.tree[self.size] = x
         self.switch_up(self.size)
         self.size += 1

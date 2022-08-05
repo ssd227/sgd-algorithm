@@ -31,11 +31,12 @@ if __name__ == '__main__':
     """
     # size 1e5 cost time: 0.98900 -> 1.16419
     # size 1e6 cost time: 12.1479
-    t1 = time.time()
-    li = [random.random() for _ in range(int(1e6))]
-    li_sort = heap_sort(li, reverse=False)
-    print('cost time:', time.time()-t1)
+    # t1 = time.time()
+    # li = [random.random() for _ in range(int(1e6))]
+    # li_sort = heap_sort(li, reverse=False)
+    # print('cost time:', time.time()-t1)
     # print(li_sort)
+
 
 
 

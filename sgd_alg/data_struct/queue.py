@@ -101,7 +101,6 @@ class ResizingArrayQueue(QueueInterface):
         print('queue is empty! no elem to dequeue! return None')
         return None
 
-
     # 有循环填充问题，容易出错
     def resizing_capacity(self):
         # print(self.size(), self.capacity, self.head_id, self.tail_id)
@@ -150,7 +149,7 @@ if __name__ == '__main__':
         print('this', que.array, que.capacity, que.head_id)
     print(result)
 
-    for x in [11,12,13,14,15]:
+    for x in [11, 12, 13, 14, 15]:
         que.enqueue(x)
         print(que.array, que.capacity, que.size())
 
@@ -159,5 +158,3 @@ if __name__ == '__main__':
         result.append(que.dequeue())
         print('this', que.array, que.capacity, que.head_id)
     print(result)
-
-
