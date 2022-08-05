@@ -14,6 +14,9 @@ binary search tree的缺点：
 就是采用多指针操作的好处，
 todo 猜测：指针在内存上的不连续性，导致cpu上的cache miss 问题比数组型数据多）
 
+跟着ppt基本实现了大框架
+todo 验证算法的正确性和实用性
+todo 删除操作时间复杂度为 根号N 还没搞明白
 """
 
 from sgd_alg.search.symbol_table import STInterface

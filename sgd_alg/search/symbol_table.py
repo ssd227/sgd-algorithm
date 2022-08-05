@@ -5,10 +5,6 @@ Values are not null.
 Method get() returns null if key not present.
 Method put() overwrites old value with new value.
 
-Symbol table
-    朴素的实现，直接unorder array 线性查找、插入、删除
-    二分查找实现（双order array实现）， 插入删除仍为线性，search（检索） logN
-
 """
 
 
