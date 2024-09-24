@@ -32,36 +32,27 @@ Main loop.
 感觉复杂度还是好高，需要预测所有碰撞加入heap中，然后选出min timet更新
 状态因碰撞改变了的粒子，与之相关的所有事件重新计算dt，然后改变在小根堆里的位置
 
-
-todo 插入一直可以无条件进行，查满了就需继续插，然后推出一个队列末尾的数
-
 """
 
 class PriorityHeap:
     def __init__(self, capacity, compare_f):
         self.order = compare_f
-        
         self.capacity = capacity
         self.size = 0
-        
         self.arr = [0]*self.capacity # 使用List来表示树结构
     
     def add(self, x):
         if self.size < self.capacity:
             self.arr[self.size] = x
             self.size += 1
-
             self.up(self.size-1) # 新加元素，交换到正确的位置
-            
             return True
-        
         # print("add item failed! heap is full, remove item first")
         return False
     
     def auto_add(self, x):
         # 当堆占满后，自动pop 堆顶元素，然后添加新的item
         ok = self.add(x)
-        
         if (not ok) and (not self.order(x, self.arr[0])): # 堆占满了， 且x比堆顶元素强点，
             self.remove() # 删掉最弱的堆顶元素，插入x
             assert self.size == (self.capacity-1)

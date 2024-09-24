@@ -55,7 +55,7 @@ class QuickUnionUF(UFInterface):
     quick union uf
 
     用数组表示树结构，而且是一个多叉树结构
-    id[i]是父节点的数组下表
+    id[i]是父节点的数组下标
     如果id[i] = i, 表明当前树的根节点
 
     union: 合并树结构，p的根并入q的根节点下。

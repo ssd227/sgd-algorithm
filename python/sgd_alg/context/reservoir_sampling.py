@@ -13,13 +13,12 @@ tips:
 """
 import random
 
-
 def reservoir_sampling(data_stream, keep_num=1):
     res = []
     i = 0
     for item in data_stream:
         i += 1  # 计数
-        # 以概率1保留前N各数
+        # 以概率1保留前N个数
         if len(res) < keep_num:
             res.append(item)
         else:
