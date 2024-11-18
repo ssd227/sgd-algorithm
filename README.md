@@ -37,7 +37,7 @@
       - [X] 二分查找 [[code]](./python/sgd_alg/search/binary_search.py) [[app]](./apps/search/binary_search.ipynb)
       - [X] binary search Tree (BST) 二分查找树 [[code]](./python/sgd_alg/search/binary_search_tree.py) [todo]
       - [X] left lean red black tree (LLRBT) 红黑树 [[code]](./python/sgd_alg/search/read_black_tree.py) [todo]
-      - [X] skip list 跳跃表 [[code]](./python/sgd_alg/search/binary_search_tree.py) [[app]](./apps/search/skip_list.ipynb) 
+      - [X] skip list 跳跃表 [[code]](./python/sgd_alg/search/skip_list.py) [[app]](./apps/search/skip_list.ipynb) [[Debug]](./apps/search/skip_list_bug.log)
   
     - Hash Table
       - [X] 静态hash表 [[code]](./python/sgd_alg/search/hash_table/static_hashing/) [[app]](./apps/search/hash_table.ipynb)
@@ -66,7 +66,6 @@
 
   - context 常用场景下的算法
     - [X] 水塘抽样算法 [[code]](./python/sgd_alg/context/reservoir_sampling.py) [[app]](./apps/context/reservoir_sampling.ipynb) 
-  
     - [X] bloom filter [[code]](./python/sgd_alg/context/bloom_filter/bloom_filter.py) [[app]](./apps/context/bloomFilter.ipynb) 
-    - cache 调度算法
-      - [X] LRU缓存 [[code]](./python/sgd_alg/context/cache/lru_cache.py) [[app]](./apps/context/cache.ipynb)
+     - cache 调度算法
+        - [X] LRU缓存 [[code]](./python/sgd_alg/context/cache/lru_cache.py) [[app]](./apps/context/cache.ipynb)
