@@ -1,0 +1,136 @@
+uid     Key     Value   bw     level info:    
+0       None    None    None   (next:1, span:1)     (next:3, span:2)     (next:6, span:9)    
+1       1       111     0      (next:3, span:1)    
+3       2       222     1      (next:2, span:1)     (next:11, span:3)   
+2       3       333     3      (next:4, span:1)    
+4       4       444     2      (next:11, span:1)   
+11      5       555     4      (next:13, span:1)    (next:13, span:1)   
+13      6       666     11     (next:10, span:1)    (next:6, span:3)    
+10      7       777     13     (next:12, span:1)   
+12      8       888     10     (next:6, span:1)    
+6       9       999     12     (next:8, span:1)     (next:8, span:1)     (next:8, span:1)    
+8       10      1110    6      (next:7, span:1)     (next:7, span:1)     (next:7, span:1)    
+7       11      1221    8      (next:5, span:1)     (next:5, span:1)     (next:5, span:1)    
+5       12      1332    7      (next:9, span:1)     (next:None, span:0)  (next:None, span:0) 
+9       13      1443    5      (next:None, span:0) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+delete 0 (无效删除)
+uid     Key     Value   bw     level info:    
+0       None    None    None   (next:1, span:1)     (next:3, span:2)     (next:6, span:9)    
+1       1       111     0      (next:3, span:1)    
+3       2       222     1      (next:2, span:1)     (next:11, span:3)   
+2       3       333     3      (next:4, span:1)    
+4       4       444     2      (next:11, span:1)   
+11      5       555     4      (next:13, span:1)    (next:13, span:1)   
+13      6       666     11     (next:10, span:1)    (next:6, span:3)    
+10      7       777     13     (next:12, span:1)   
+12      8       888     10     (next:6, span:1)    
+6       9       999     12     (next:8, span:1)     (next:8, span:1)     (next:8, span:1)    
+8       10      1110    6      (next:7, span:1)     (next:7, span:1)     (next:7, span:1)    
+7       11      1221    8      (next:5, span:1)     (next:5, span:1)     (next:5, span:1)    
+5       12      1332    7      (next:9, span:1)     (next:None, span:0)  (next:None, span:0) 
+9       13      1443    5      (next:None, span:0) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+delete 2
+delete level:2, pi:None, p:2.
+delete level:0, pi:None, p:2.
+delete level:1, pi:None, p:2.
+uid     Key     Value   bw     level info:    
+0       None    None    None   (next:2, span:1)     (next:11, span:4)    (next:6, span:8)    
+2       3       333     1      (next:4, span:1)    
+4       4       444     2      (next:11, span:1)   
+11      5       555     4      (next:13, span:1)    (next:13, span:1)   
+13      6       666     11     (next:10, span:1)    (next:6, span:3)    
+10      7       777     13     (next:12, span:1)   
+12      8       888     10     (next:6, span:1)    
+6       9       999     12     (next:8, span:1)     (next:8, span:1)     (next:8, span:1)    
+8       10      1110    6      (next:7, span:1)     (next:7, span:1)     (next:7, span:1)    
+7       11      1221    8      (next:5, span:1)     (next:5, span:1)     (next:5, span:1)    
+5       12      1332    7      (next:9, span:1)     (next:None, span:0)  (next:None, span:0) 
+9       13      1443    5      (next:None, span:0) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+delete 1
+uid     Key     Value   bw     level info:    
+0       None    None    None   (next:2, span:1)     (next:11, span:4)    (next:6, span:8)    
+2       3       333     1      (next:4, span:1)    
+4       4       444     2      (next:11, span:1)   
+11      5       555     4      (next:13, span:1)    (next:13, span:1)   
+13      6       666     11     (next:10, span:1)    (next:6, span:3)    
+10      7       777     13     (next:12, span:1)   
+12      8       888     10     (next:6, span:1)    
+6       9       999     12     (next:8, span:1)     (next:8, span:1)     (next:8, span:1)    
+8       10      1110    6      (next:7, span:1)     (next:7, span:1)     (next:7, span:1)    
+7       11      1221    8      (next:5, span:1)     (next:5, span:1)     (next:5, span:1)    
+5       12      1332    7      (next:9, span:1)     (next:None, span:0)  (next:None, span:0) 
+9       13      1443    5      (next:None, span:0) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+delete 3
+delete level:2, pi:None, p:3.
+delete level:1, pi:None, p:3.
+delete level:0, pi:None, p:3.
+uid     Key     Value   bw     level info:    
+0       None    None    None   (next:4, span:1)     (next:11, span:3)    (next:6, span:7)    
+4       4       444     1      (next:11, span:1)   
+11      5       555     4      (next:13, span:1)    (next:13, span:1)   
+13      6       666     11     (next:10, span:1)    (next:6, span:3)    
+10      7       777     13     (next:12, span:1)   
+12      8       888     10     (next:6, span:1)    
+6       9       999     12     (next:8, span:1)     (next:8, span:1)     (next:8, span:1)    
+8       10      1110    6      (next:7, span:1)     (next:7, span:1)     (next:7, span:1)    
+7       11      1221    8      (next:5, span:1)     (next:5, span:1)     (next:5, span:1)    
+5       12      1332    7      (next:9, span:1)     (next:None, span:0)  (next:None, span:0) 
+9       13      1443    5      (next:None, span:0) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+put 101， 101
+uid     Key     Value   bw     level info:    
+0       None    None    None   (next:4, span:1)     (next:11, span:3)    (next:6, span:7)    
+4       4       444     1      (next:11, span:1)   
+11      5       555     4      (next:13, span:1)    (next:13, span:1)   
+13      6       666     11     (next:10, span:1)    (next:6, span:3)    
+10      7       777     13     (next:12, span:1)   
+12      8       888     10     (next:6, span:1)    
+6       9       999     12     (next:8, span:1)     (next:8, span:1)     (next:8, span:1)    
+8       10      1110    6      (next:7, span:1)     (next:7, span:1)     (next:7, span:1)    
+7       11      1221    8      (next:5, span:1)     (next:5, span:1)     (next:5, span:1)    
+5       12      1332    7      (next:9, span:1)     (next:14, span:2)    (next:None, span:0) 
+9       13      1443    5      (next:14, span:1)   
+14      101     101     9      (next:None, span:0)  (next:None, span:0) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+delete 101
+delete level:2, pi:12, p:101.
+delete level:0, pi:12, p:101.
+delete level:1, pi:12, p:101.
+uid     Key     Value   bw     level info:    
+0       None    None    None   (next:4, span:1)     (next:11, span:3)    (next:6, span:7)    
+4       4       444     1      (next:11, span:1)   
+11      5       555     4      (next:13, span:1)    (next:13, span:1)   
+13      6       666     11     (next:10, span:1)    (next:6, span:3)    
+10      7       777     13     (next:12, span:1)   
+12      8       888     10     (next:6, span:1)    
+6       9       999     12     (next:8, span:1)     (next:8, span:1)     (next:8, span:1)    
+8       10      1110    6      (next:7, span:1)     (next:7, span:1)     (next:7, span:1)    
+7       11      1221    8      (next:5, span:1)     (next:5, span:1)     (next:5, span:1)    
+5       12      1332    7      (next:None, span:0)  (next:None, span:0)  (next:None, span:0) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+评述：
+    随机性导致的前置节点错误，使得会误删
+
+    核心问题是，不能够直接把i降到0，并设置好所有前置节点
+        插入时，由于必定会降低到0，所以前置节点问题不大。
+        
+        删除时，即使查找成功，也必须降低level，继续搜索，find 最近前置节点（那么这个find操作的时间复杂度就很差了）
+            bw指针可以解决这个问题吗？ 不太行，和正向搜索的复杂度差不多。
+            TODO 双向指针能解决问题吗？Redis的这种设计合理吗？使用场景是什么情况。
+
+    TODO 前置节点+更新的问题，能不能整合到代码框架里融合做？不使用pre_map+后处理的模式 
+
+
+-------------
+高level前置节点也需要处理对应的span
+为了这个span功能，逻辑整的也太复杂了
+redis这么设计真的是合理的吗？

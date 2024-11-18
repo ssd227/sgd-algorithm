@@ -1,4 +1,4 @@
-# sgd_algorithm（python-version）
+# sgd_algorithm（Python）
 
 ## 简介
 以《algorithm 4th》为基本框架，整合常用的数据结构和算法。
@@ -37,7 +37,7 @@
       - [X] 二分查找 [[code]](./python/sgd_alg/search/binary_search.py) [[app]](./apps/search/binary_search.ipynb)
       - [X] binary search Tree (BST) 二分查找树 [[code]](./python/sgd_alg/search/binary_search_tree.py) [todo]
       - [X] left lean red black tree (LLRBT) 红黑树 [[code]](./python/sgd_alg/search/read_black_tree.py) [todo]
-      - [X] skip list 跳跃表 [[code]](./python/sgd_alg/search/binary_search_tree.py) [todo]
+      - [X] skip list 跳跃表 [[code]](./python/sgd_alg/search/binary_search_tree.py) [[app]](./apps/search/skip_list.ipynb) 
   
     - Hash Table
       - [X] 静态hash表 [[code]](./python/sgd_alg/search/hash_table/static_hashing/) [[app]](./apps/search/hash_table.ipynb)
